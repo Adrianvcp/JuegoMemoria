@@ -47,12 +47,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         tv_p1 = (TextView) findViewById(R.id.tv_p1);
-        tv_p2 = (TextView) findViewById(R.id.tv_p2);
+
 
         iv_11 = (ImageView) findViewById(R.id.iv_11);
         iv_12 = (ImageView) findViewById(R.id.iv_12);
         iv_13 = (ImageView) findViewById(R.id.iv_13);
         iv_14 = (ImageView) findViewById(R.id.iv_14);
+
         iv_21 = (ImageView) findViewById(R.id.iv_21);
         iv_22 = (ImageView) findViewById(R.id.iv_22);
         iv_23 = (ImageView) findViewById(R.id.iv_23);
@@ -251,93 +252,137 @@ public class MainActivity extends AppCompatActivity {
     private void calculate() {
         if(firstCard == secondCard){
             if(clickedFirst == 0) {
-                iv_11.setVisibility(View.INVISIBLE);
+                iv_11.setVisibility(View.VISIBLE);
             }else if (clickedFirst == 1){
-                iv_12.setVisibility(View.INVISIBLE);
+                iv_12.setVisibility(View.VISIBLE);
             }else if (clickedFirst == 2){
-                iv_13.setVisibility(View.INVISIBLE);
+                iv_13.setVisibility(View.VISIBLE);
             }else if (clickedFirst == 3){
-                iv_14.setVisibility(View.INVISIBLE);
+                iv_14.setVisibility(View.VISIBLE);
             }else if (clickedFirst == 4){
-                iv_21.setVisibility(View.INVISIBLE);
+                iv_21.setVisibility(View.VISIBLE);
             }else if (clickedFirst == 5){
-                iv_22.setVisibility(View.INVISIBLE);
+                iv_22.setVisibility(View.VISIBLE);
             }else if (clickedFirst == 6){
-                iv_23.setVisibility(View.INVISIBLE);
+                iv_23.setVisibility(View.VISIBLE);
             }else if (clickedFirst == 7){
-                iv_24.setVisibility(View.INVISIBLE);
+                iv_24.setVisibility(View.VISIBLE);
             }else if (clickedFirst == 8){
-                iv_31.setVisibility(View.INVISIBLE);
+                iv_31.setVisibility(View.VISIBLE);
             }else if (clickedFirst == 9){
-                iv_32.setVisibility(View.INVISIBLE);
+                iv_32.setVisibility(View.VISIBLE);
             }else if (clickedFirst == 10) {
-                iv_33.setVisibility(View.INVISIBLE);
+                iv_33.setVisibility(View.VISIBLE);
             }else if (clickedFirst == 11) {
-                iv_34.setVisibility(View.INVISIBLE);
+                iv_34.setVisibility(View.VISIBLE);
             }
 
             if(clickedSecond == 0) {
-                iv_11.setVisibility(View.INVISIBLE);
+                iv_11.setVisibility(View.VISIBLE);
             }else if (clickedSecond == 1){
-                iv_12.setVisibility(View.INVISIBLE);
+                iv_12.setVisibility(View.VISIBLE);
             }else if (clickedSecond == 2){
-                iv_13.setVisibility(View.INVISIBLE);
+                iv_13.setVisibility(View.VISIBLE);
             }else if (clickedSecond == 3){
-                iv_14.setVisibility(View.INVISIBLE);
+                iv_14.setVisibility(View.VISIBLE);
             }else if (clickedSecond == 4){
-                iv_21.setVisibility(View.INVISIBLE);
+                iv_21.setVisibility(View.VISIBLE);
             }else if (clickedSecond == 5){
-                iv_22.setVisibility(View.INVISIBLE);
+                iv_22.setVisibility(View.VISIBLE);
             }else if (clickedSecond == 6){
-                iv_23.setVisibility(View.INVISIBLE);
+                iv_23.setVisibility(View.VISIBLE);
             }else if (clickedSecond == 7){
-                iv_24.setVisibility(View.INVISIBLE);
+                iv_24.setVisibility(View.VISIBLE);
             }else if (clickedSecond == 8){
-                iv_31.setVisibility(View.INVISIBLE);
+                iv_31.setVisibility(View.VISIBLE);
             }else if (clickedSecond == 9){
-                iv_32.setVisibility(View.INVISIBLE);
+                iv_32.setVisibility(View.VISIBLE);
             }else if (clickedSecond == 10) {
-                iv_33.setVisibility(View.INVISIBLE);
+                iv_33.setVisibility(View.VISIBLE);
             }else if (clickedSecond == 11) {
-                iv_34.setVisibility(View.INVISIBLE);
+                iv_34.setVisibility(View.VISIBLE);
             }
 
             // add points to the correct player
             if(turn == 1){
                 playerPoints++;
-                tv_p1.setText("P1:  "+ playerPoints);
-            }else if (turn == 2){
-                cpuPoints++;
-                tv_p2.setText("P2:  "+ cpuPoints);
+                tv_p1.setText("Puntaje:  "+ playerPoints);
             }
 
         }else{
-            iv_11.setImageResource(R.drawable.unknown);
-            iv_12.setImageResource(R.drawable.unknown);
-            iv_13.setImageResource(R.drawable.unknown);
-            iv_14.setImageResource(R.drawable.unknown);
-            iv_21.setImageResource(R.drawable.unknown);
-            iv_22.setImageResource(R.drawable.unknown);
-            iv_23.setImageResource(R.drawable.unknown);
-            iv_24.setImageResource(R.drawable.unknown);
-            iv_31.setImageResource(R.drawable.unknown);
-            iv_32.setImageResource(R.drawable.unknown);
-            iv_33.setImageResource(R.drawable.unknown);
-            iv_34.setImageResource(R.drawable.unknown);
 
 
-            // change the player turn
-            if(turn == 1){
-                turn = 2;
-                tv_p1.setTextColor(Color.GRAY);
-                tv_p2.setTextColor(Color.BLACK);
-            }else if(turn == 2){
-                turn = 1;
-                tv_p1.setTextColor(Color.BLACK);
-                tv_p2.setTextColor(Color.GRAY);
+
+                if(clickedFirst == 0) {
+                    iv_11.setImageResource(R.drawable.unknown);
+                }else if (clickedFirst == 1){
+                    iv_12.setImageResource(R.drawable.unknown);
+                }else if (clickedFirst == 2){
+                    iv_13.setImageResource(R.drawable.unknown);
+                }else if (clickedFirst == 3){
+                    iv_14.setImageResource(R.drawable.unknown);
+                }else if (clickedFirst == 4){
+                    iv_21.setImageResource(R.drawable.unknown);
+                }else if (clickedFirst == 5){
+                    iv_22.setImageResource(R.drawable.unknown);
+                }else if (clickedFirst == 6){
+                    iv_23.setImageResource(R.drawable.unknown);
+                }else if (clickedFirst == 7){
+                    iv_24.setImageResource(R.drawable.unknown);
+                }else if (clickedFirst == 8){
+                    iv_31.setImageResource(R.drawable.unknown);
+                }else if (clickedFirst == 9){
+                    iv_32.setImageResource(R.drawable.unknown);
+                }else if (clickedFirst == 10) {
+                    iv_33.setImageResource(R.drawable.unknown);
+                }else if (clickedFirst == 11) {
+                    iv_34.setImageResource(R.drawable.unknown);
+                }
+
+            if(clickedSecond == 0) {
+                iv_11.setImageResource(R.drawable.unknown);
+                iv_11.setEnabled(false);
+            }else if (clickedSecond == 1){
+                iv_12.setImageResource(R.drawable.unknown);
+            }else if (clickedSecond == 2){
+                iv_13.setImageResource(R.drawable.unknown);
+            }else if (clickedSecond == 3){
+                iv_14.setImageResource(R.drawable.unknown);
+            }else if (clickedSecond == 4){
+                iv_21.setImageResource(R.drawable.unknown);
+            }else if (clickedSecond == 5){
+                iv_22.setImageResource(R.drawable.unknown);
+            }else if (clickedSecond == 6){
+                iv_23.setImageResource(R.drawable.unknown);
+            }else if (clickedSecond == 7){
+                iv_24.setImageResource(R.drawable.unknown);
+            }else if (clickedSecond == 8){
+                iv_31.setImageResource(R.drawable.unknown);
+            }else if (clickedSecond == 9){
+                iv_32.setImageResource(R.drawable.unknown);
+            }else if (clickedSecond == 10) {
+                iv_33.setImageResource(R.drawable.unknown);
+            }else if (clickedSecond == 11) {
+                iv_34.setImageResource(R.drawable.unknown);
             }
-        }
 
+
+            //iv_11.setImageResource(R.drawable.unknown);
+            //iv_12.setImageResource(R.drawable.unknown);
+            //iv_13.setImageResource(R.drawable.unknown);
+            //iv_14.setImageResource(R.drawable.unknown);
+            //iv_21.setImageResource(R.drawable.unknown);
+            //iv_22.setImageResource(R.drawable.unknown);
+            //iv_23.setImageResource(R.drawable.unknown);
+            //iv_24.setImageResource(R.drawable.unknown);
+            //iv_31.setImageResource(R.drawable.unknown);
+            //iv_32.setImageResource(R.drawable.unknown);
+            //iv_33.setImageResource(R.drawable.unknown);
+            //iv_34.setImageResource(R.drawable.unknown);
+
+
+
+        }
         iv_11.setEnabled(true);
         iv_12.setEnabled(true);
         iv_13.setEnabled(true);
@@ -351,28 +396,19 @@ public class MainActivity extends AppCompatActivity {
         iv_33.setEnabled(true);
         iv_34.setEnabled(true);
 
+
         // check if the game is over
         checkEnd();
     }
 
 
     private void checkEnd() {
-        if(iv_11.getVisibility() == View.INVISIBLE &&
-                iv_12.getVisibility() == View.INVISIBLE &&
-                iv_13.getVisibility() == View.INVISIBLE &&
-                iv_14.getVisibility() == View.INVISIBLE &&
-                iv_21.getVisibility() == View.INVISIBLE &&
-                iv_22.getVisibility() == View.INVISIBLE &&
-                iv_23.getVisibility() == View.INVISIBLE &&
-                iv_24.getVisibility() == View.INVISIBLE &&
-                iv_31.getVisibility() == View.INVISIBLE &&
-                iv_32.getVisibility() == View.INVISIBLE &&
-                iv_33.getVisibility() == View.INVISIBLE &&
-                iv_34.getVisibility() == View.INVISIBLE){
+
+        if(playerPoints == 6){
 
             AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(MainActivity.this);
             alertDialogBuilder
-                    .setMessage("Juego Terminado! \n P1: " + playerPoints + "\n P2: " + cpuPoints)
+                    .setMessage("Juego Terminado! \n Puntaje: " + playerPoints )
                     .setCancelable(false)
                     .setPositiveButton("Nuevo", new DialogInterface.OnClickListener() {
                         @Override

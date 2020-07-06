@@ -23,23 +23,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="56dp"
         android:layout_marginLeft="56dp"
-        android:text="P1: 0"
+        android:text="Puntaje: 0"
         android:textColor="#000000"
         android:textSize="32dp"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteY="76dp" />
 
-    <TextView
-        android:id="@+id/tv_p2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="P2: 0"
-        android:textColor="#000000"
-        android:textSize="32dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.8"
-        app:layout_constraintStart_toEndOf="@+id/tv_p1"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="76dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
